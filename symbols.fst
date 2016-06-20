@@ -1,0 +1,21 @@
+%%%%%%%%%%%%%%% symbols.fst %%%%%%%%%%%%%%%%
+#cons# = bcdfghjklmnprstvwxz
+#vowel# = aeiou
+#letter# = a-z
+#LETTER# = A-Z
+#Letter# = #LETTER# #letter#
+#pos# = <Adj><Noun><Verb>
+#infl# = <A-reg><N-reg><V-reg><V-dup><V-pres-ger2><V-past-part>
+#trigger# = <dup>
+#mcs# = #pos# #trigger#
+#sym# = #Letter# #mcs# #infl#
+$cons$ = [#cons#]
+$vowel$ = [#vowel#]
+$letter$ = [#letter#]
+$LETTER$ = [#LETTER#]
+$Letter$ = [#Letter#]
+$pos$ = [#pos#]
+$infl$ = [#infl#]
+$trigger$ = [#trigger#]
+$mcs$ = [#mcs#]
+$sym$ = [#sym#]
