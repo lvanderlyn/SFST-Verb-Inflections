@@ -1,6 +1,7 @@
 $t_ending$ = (([a-z]* te {n}:{t}) | ([a-z]* [^e] {en}:{t}))
 
 
+
 %%%%%% Regelmäßig Sein Verben mit "en" %%%%%%
 $sein_regular_en$ = (\
   {}:{ge} "sein-en.lex") 
