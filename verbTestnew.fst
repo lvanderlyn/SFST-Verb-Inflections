@@ -35,7 +35,7 @@ $haben_irregular_same$ = "haben-irregular.lex"
 $haben_u_shift$ = (\
   "haben-u-shift.lex" || \
   {}:{ge} [a-z] i:u [a-z]* || \
-  $t_ending$) 
+  $t_ending$)  
   
 
 %%%%% Regelmäßig Haben Verben mit "en" %%%%%
