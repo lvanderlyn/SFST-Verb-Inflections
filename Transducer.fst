@@ -52,7 +52,7 @@ $sein-verbs$ = {<V><perf>}:{} (\
   {<1><pl>}:{sind \ } |\
   {<2><pl>}:{seid \ } |\
   {<3><pl>}:{sind \ }) \
-  ($sein_regular_en$ | $sein_a_shift$))
+  ($sein_regular_en$ | $sein_a_shift$ | $sein_total_irregular$))
    
 $haben-verbs$ = {<V><perf>}:{} (\
   ({<1><sg>}:{habe \ } |\
@@ -61,6 +61,25 @@ $haben-verbs$ = {<V><perf>}:{} (\
   {<1><pl>}:{haben \ } |\
   {<2><pl>}:{habt \ } |\
   {<3><pl>}:{haben \ }) \
+  ($haben_regular_t$ | $haben_irregular_t$ | $haben_irregular_same$ |\
+   $haben_u_shift$ | $haben_regular_en$))
+
+$sein-verbs-konjunktiv$ = {<V><perf>}:{} (\
+  ({<1><sg>}:{wäre \ } |\
+  {<2><sg>}:{wärest \ } |\
+  {<3><sg>}:{wäare \ } |\
+  {<1><pl>}:{wären \ } |\
+  {<2><pl>}:{wäret \ } |\
+  {<3><pl>}:{wären \ }) \
+  ($sein_regular_en$ | $sein_a_shift$ | $sein_total_irregular$))
+
+$haben-verbs-konjunktiv$ = {<V><perf>}:{} (\
+  ({<1><sg>}:{hätte \ } |\
+  {<2><sg>}:{hättest \ } |\
+  {<3><sg>}:{hätte \ } |\
+  {<1><pl>}:{hätten \ } |\
+  {<2><pl>}:{hättet \ } |\
+  {<3><pl>}:{hätten \ }) \
   ($haben_regular_t$ | $haben_irregular_t$ | $haben_irregular_same$ |\
    $haben_u_shift$ | $haben_regular_en$))
 
@@ -90,4 +109,5 @@ $futurIIsein$= {<V><futII>} : {} (\
  {<2><pl>}: {werden \ } |\
  {<3><pl>}: {werden \ }) ($sein_regular_en$ | $sein_a_shift$) ({} : {\ sein}))
 
-$sein-verbs$ | $haben-verbs$ | $futur$ | $futurIIhaben$ | $futurIIsein$
+$sein-verbs$ | $haben-verbs$ | $futur$ | $futurIIhaben$ | $futurIIsein$| \
+$sein-verbs-konjunktiv$| $haben-verbs-konjunktiv$
