@@ -52,7 +52,7 @@ $sein-verbs$ = {<V><perf>}:{} (\
   {<1><pl>}:{sind \ } |\
   {<2><pl>}:{seid \ } |\
   {<3><pl>}:{sind \ }) \
-  ($sein_regular_en$ | $sein_a_shift$))
+  ($sein_regular_en$ | $sein_a_shift$ | $sein_total_irregular$))
    
 $haben-verbs$ = {<V><perf>}:{} (\
   ({<1><sg>}:{habe \ } |\
@@ -64,13 +64,32 @@ $haben-verbs$ = {<V><perf>}:{} (\
   ($haben_regular_t$ | $haben_irregular_t$ | $haben_irregular_same$ |\
    $haben_u_shift$ | $haben_regular_en$))
 
+$sein-verbs-konjunktiv$ = {<V><konj2>}:{} (\
+  ({<1><sg>}:{wäre \ } |\
+  {<2><sg>}:{wärst \ } |\
+  {<3><sg>}:{wäre \ } |\
+  {<1><pl>}:{wären \ } |\
+  {<2><pl>}:{wärt \ } |\
+  {<3><pl>}:{wären \ }) \
+  ($sein_regular_en$ | $sein_a_shift$ | $sein_total_irregular$))
+
+$haben-verbs-konjunktiv$ = {<V><konj2>}:{} (\
+  ({<1><sg>}:{hätte \ } |\
+  {<2><sg>}:{hättest \ } |\
+  {<3><sg>}:{hätte \ } |\
+  {<1><pl>}:{hätten \ } |\
+  {<2><pl>}:{hättet \ } |\
+  {<3><pl>}:{hätten \ }) \
+  ($haben_regular_t$ | $haben_irregular_t$ | $haben_irregular_same$ |\
+   $haben_u_shift$ | $haben_regular_en$))
+
 $futur$ = {<V><fut>} : {} (\
 ({<1><sg>}:{werde} |\
 {<2><sg>}:{wirst} |\
 {<3><sg>}:{wird} |\
 {<1><pl>}:{werden} |\
 {<2><pl>}:{werdet} |\
-{<3><pl>}:{werden}) (\ "25Verben.lex"))
+{<3><pl>}:{werden}) (\ "germanverbs.lex"))
 
 $futurIIhaben$= {<V><futII>} : {} (\
 ({<1><sg>}: {werde \ } |\
@@ -88,7 +107,8 @@ $futurIIsein$= {<V><futII>} : {} (\
  {<3><sg>}: {wird \  } |\
  {<1><pl>}: {werden \ } |\
  {<2><pl>}: {werden \ } |\
- {<3><pl>}: {werden \ }) ($sein_regular_en$ | $sein_a_shift$) ({} : {\ sein}))
+ {<3><pl>}: {werden \ }) ($sein_regular_en$ | $sein_a_shift$ | $sein_total_irregular$) \ 
+ ({} : {\ sein}))
 
 $PassivF$= {<V><P><Fut><Ind>}: {}(\
 ({<1><sg>}:{werde} |\
@@ -99,7 +119,7 @@ $PassivF$= {<V><P><Fut><Ind>}: {}(\
  {<3><pl>}:{werden})\ ($haben_regular_t$ | $haben_irregular_t$ | $haben_irregular_same$ |\
    $haben_u_shift$ | $haben_regular_en$ | $sein_regular_en$ | $sein_a_shift$)) ({} : {\ werden})
 
-$KII$= ("25Verben.lex" || {kommen}:{käm} | {sein}:{wär} | {laufen} : {lief} | {vergehen}:{verging} | {müssen}:{müsst} | {wissen} : {wüsst} | {finden} : {fänd} | {denken} : {dächt} | {glauben} : {glaubt} | {zeigen} : {zeigt} | {leben} : {lebt} | {kennen} : {kennt} | {arbeiten} : {arbeitet} | {bestehen} : {bestünd} | {beginnen} : {begänn} | {ziehen} : {zög} | {entstehen} : {bntstünd} | {legen}  : {legt} | {tragen} : {trüg} | {erwarten} : {erwartet} | {fühlen} : {fühlt} |{ergeben} : {ergäb})
+$KII$= ("25Verben.txt" || {kommen}:{käm} | {sein}:{wär} | {laufen} : {lief} | {vergehen}:{verging} | {müssen}:{müsst} | {wissen} : {wüsst} | {finden} : {fänd} | {denken} : {dächt} | {glauben} : {glaubt} | {zeigen} : {zeigt} | {leben} : {lebt} | {kennen} : {kennt} | {arbeiten} : {arbeitet} | {bestehen} : {bestünd} | {beginnen} : {begänn} | {ziehen} : {zög} | {entstehen} : {bntstünd} | {legen}  : {legt} | {tragen} : {trüg} | {erwarten} : {erwartet} | {fühlen} : {fühlt} |{ergeben} : {ergäb})
 $KIIP$= $KII$ {<V><Pres><KonII>}: {}(\
 ({<1><sg>}:{e} |\
  {<2><sg>}:{est} |\
@@ -108,4 +128,5 @@ $KIIP$= $KII$ {<V><Pres><KonII>}: {}(\
  {<2><pl>}:{et} |\
  {<3><pl>}:{en}))
 
-$sein-verbs$ | $haben-verbs$ | $futur$ | $futurIIhaben$ | $futurIIsein$ | $PassivF$ | $KIIP$
+$sein-verbs$ | $haben-verbs$ | $futur$ | $futurIIhaben$ | $futurIIsein$ | \
+$PassivF$ | $KIIP$ | $sein-verbs-konjunktiv$| $haben-verbs-konjunktiv$
