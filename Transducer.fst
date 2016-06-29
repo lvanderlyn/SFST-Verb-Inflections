@@ -64,16 +64,16 @@ $haben-verbs$ = {<V><perf>}:{} (\
   ($haben_regular_t$ | $haben_irregular_t$ | $haben_irregular_same$ |\
    $haben_u_shift$ | $haben_regular_en$))
 
-$sein-verbs-konjunktiv$ = {<V><konj><perf>}:{} (\
+$sein-verbs-konjunktiv$ = {<V><konj>}:{} (\
   ({<1><sg>}:{wäre \ } |\
-  {<2><sg>}:{wärest \ } |\
-  {<3><sg>}:{wäare \ } |\
+  {<2><sg>}:{wärst \ } |\
+  {<3><sg>}:{wäre \ } |\
   {<1><pl>}:{wären \ } |\
-  {<2><pl>}:{wäret \ } |\
+  {<2><pl>}:{wärt \ } |\
   {<3><pl>}:{wären \ }) \
   ($sein_regular_en$ | $sein_a_shift$ | $sein_total_irregular$))
 
-$haben-verbs-konjunktiv$ = {<V><konj><perf>}:{} (\
+$haben-verbs-konjunktiv$ = {<V><konj>}:{} (\
   ({<1><sg>}:{hätte \ } |\
   {<2><sg>}:{hättest \ } |\
   {<3><sg>}:{hätte \ } |\
