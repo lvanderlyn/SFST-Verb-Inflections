@@ -1,2 +1,0 @@
-entstehen
-vergehen
