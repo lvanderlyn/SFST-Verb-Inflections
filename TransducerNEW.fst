@@ -1,6 +1,6 @@
 #include "morph.fst"
 
-$sein_verbs$ = {<V><perf>}:{} (\
+$seinVerben$ = {<V><Akt><perf><Ind>}:{} (\
   ({<1><sg>}:{bin \ } |\
   {<2><sg>}:{bist \ } |\
   {<3><sg>}:{ist \ } |\
@@ -9,7 +9,7 @@ $sein_verbs$ = {<V><perf>}:{} (\
   {<3><pl>}:{sind \ }) \
   ($s_morph$ | {sein}:{gewesen}))
 
-$haben_verbs$ = {<V><perf>}:{} (\
+$habenVerben$ = {<V><Akt><perf><Ind>}:{} (\
   ({<1><sg>}:{habe \ } |\
   {<2><sg>}:{hast \ } |\
   {<3><sg>}:{hat \ } |\
@@ -18,7 +18,7 @@ $haben_verbs$ = {<V><perf>}:{} (\
   {<3><pl>}:{haben \ }) \
   ($h_morph$))
 
-$sein_verbs_konjunktiv$ = {<V><konj2>}:{} (\
+$seinVerbenKonjunktiv$ = {<V><konj2>}:{} (\
   ({<1><sg>}:{wäre \ } |\
   {<2><sg>}:{wärst \ } |\
   {<3><sg>}:{wäre \ } |\
@@ -27,7 +27,7 @@ $sein_verbs_konjunktiv$ = {<V><konj2>}:{} (\
   {<3><pl>}:{wären \ }) \
   ($s_morph$ | {sein}:{gewesen}))
 
-$haben_verbs_konjunktiv$ = {<V><konj2>}:{} (\
+$habenVerbenKonjunktiv$ = {<V><konj2>}:{} (\
   ({<1><sg>}:{hätte \ } |\
   {<2><sg>}:{hättest \ } |\
   {<3><sg>}:{hätte \ } |\
@@ -45,7 +45,7 @@ $futurIIhaben$= {<V><futII>} : {} (\
  {<3><pl>}: {werden \ }) \
  ($h_morph$) ({} : {\ haben})) 
 
-$futurIIsein$= {<V><futII>} : {} (\
+$futurIIsein$= {<V><Akt><futII><Ind>} : {} (\
 ({<1><sg>}: {werde \ } |\
  {<2><sg>}: {wirst \ } |\
  {<3><sg>}: {wird \  } |\
@@ -81,7 +81,7 @@ $passivPer$= {<V><P><Per><Ind>}: {}(\
   {<3><pl>}:{sind \ }) \
   ($h_morph$ | $s_morph$)) ({} : {\ worden})
 
-$futur$ = {<V><fut>} : {} (\
+$futur$ = {<V><Akt><fut><Ind>}:{} (\
 ({<1><sg>}:{werde \ } |\
  {<2><sg>}:{wirst \ } |\
  {<3><sg>}:{wird \ } |\
@@ -106,4 +106,4 @@ $praeteritum$ = $praeteritum_stems$ {<V><Praet>}:{} (\
  e? {<2><pl>}:{t} |\
  e? {<3><pl>}:{n}))
 
-$sein_verbs$ | $haben_verbs$ | $sein_verbs_konjunktiv$ | $haben_verbs_konjunktiv$ | $futurIIhaben$ | $futurIIsein$ | $passivF$ | $futur$ | $konjunktiv_II_present$ | $praeteritum$ $passivPres$ | $passivPer$
+$seinVerben$ | $habenVerben$ | $seinVerbenKonjunktiv$ | $habenVerbenKonjunktiv$ | $futurIIhaben$ | $futurIIsein$ | $passivF$ | $futur$ | $konjunktiv_II_present$ | $praeteritum$ $passivPres$ | $passivPer$
