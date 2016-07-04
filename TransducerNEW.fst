@@ -115,4 +115,4 @@ $praeteritum$ = $praeteritum_stems$ {<V><Praet>}:{} (\
   e? {<2><pl>}:{t} |\
   e? {<3><pl>}:{n}))
 
-$seinVerben$ | $habenVerben$ | $seinVerbenKonjunktiv$ | $habenVerbenKonjunktiv$ | $futurIIhaben$ | $futurIIsein$ | $passivF$ | $futur$ | $konjunktiv_II_present$ | $praeteritum$ $passivPres$ | $passivPer$ | $passivPrae$
+$seinVerben$ | $habenVerben$ | $seinVerbenKonjunktiv$ | $habenVerbenKonjunktiv$ | $futurIIhaben$ | $futurIIsein$ | $passivF$ | $futur$ | $konjunktiv_II_present$ | $praeteritum$ | $passivPres$ | $passivPer$ | $passivPrae$

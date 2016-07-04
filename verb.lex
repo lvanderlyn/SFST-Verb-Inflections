@@ -7,6 +7,7 @@ laufen<sein_en>
 gehen<sein_en>
 fahren<sein_en>
 
+sein<sein_total_irregular>
 
 glauben<haben_regular_t>
 fühlen<haben_regular_t>

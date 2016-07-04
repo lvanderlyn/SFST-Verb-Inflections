@@ -5,7 +5,7 @@
 #letter# = a-z
 #LETTER# = A-Z
 #Letter# = #LETTER# #letter#
-#infl# = <sein_a_shift><sein_en><haben_regular_t><haben_irregular_t><haben_irregular_same><haben_irregular_u_shift><haben_regular_en>
+#infl# = <sein_a_shift><sein_en><haben_regular_t><haben_irregular_t><haben_irregular_same><haben_irregular_u_shift><haben_regular_en><sein_total_irregular>
 #sym# = #Letter# #infl#
 $cons$ = [#cons#]
 $vowel$ = [#vowel#]
