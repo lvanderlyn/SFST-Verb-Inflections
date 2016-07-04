@@ -1,36 +1,36 @@
-entstehen<sein_a_shift>
-vergehen<sein_a_shift>
-stehen<sein_a_shift>
+entstehen<sein_a_shift-per>
+vergehen<sein_a_shift-per>
+stehen<sein_a_shift-per>
 
-kommen<sein_en>
-laufen<sein_en>
-gehen<sein_en>
-fahren<sein_en>
+kommen<sein_en-per>
+laufen<sein_en-per>
+gehen<sein_en-per>
+fahren<sein_en-per>
 
-sein<sein_total_irregular>
+sein<sein_total_irregular-per>
 
-glauben<haben_regular_t>
-fühlen<haben_regular_t>
-zeigen<haben_regular_t>
-leben<haben_regular_t>
-legen<haben_regular_t>
-darstellen<haben_regular_t>
-arbeiten<haben_regular_t>
-meinen<haben_regular_t>
-fragen<haben_regular_t>
-sagen<haben_regular_t>
-machen<haben_regular_t>
-haben<haben_regular_t>
-spielen<haben_regular_t>
+glauben<haben_regular_t-per>
+fühlen<haben_regular_t-per>
+zeigen<haben_regular_t-per>
+leben<haben_regular_t-per>
+legen<haben_regular_t-per>
+darstellen<haben_regular_t-per>
+arbeiten<haben_regular_t-per>
+meinen<haben_regular_t-per>
+fragen<haben_regular_t-per>
+sagen<haben_regular_t-per>
+machen<haben_regular_t-per>
+haben<haben_regular_t-per>
+spielen<haben_regular_t-per>
 
-erwarten<haben_irregular_t>
-vertrauen<haben_irregular_t>
+erwarten<haben_irregular_t-per>
+vertrauen<haben_irregular_t-per>
 
-ergeben<haben_irregular_same>
+ergeben<haben_irregular_same-per>
 
-wissen<haben_u_shift>
-finden<haben_u_shift>
+wissen<haben_u_shift-per>
+finden<haben_u_shift-per>
 
-ansehen<haben_regular_en>
-aussehen<haben_regular_en>
-tragen<haben_regular_en>
+ansehen<haben_regular_en-per>
+aussehen<haben_regular_en-per>
+tragen<haben_regular_en-per>

@@ -5,36 +5,36 @@ $t_ending$ = (([a-z]* te {n}:{t}) | ([a-z]* [^e] {en}:{t} | [a-z]* [^e] {en}:{en
 
 %%%%%% Regelmäßig Sein Verben mit "en" %%%%%%
 $sein_regular_en$ = (\
-  {}:{ge} $Letter$* <sein_en>)
+  {}:{ge} $Letter$* <sein_en-per>)
 
 %%%%%% A-shift Sein Verben %%%%%%
-$sein_a_shift$ =  $Letter$*(\
+$sein_a_shift-per$ =  $Letter$*(\
   {gehen}:{gangen} |\
-  {stehen}:{standen}) <sein_a_shift> 
+  {stehen}:{standen}) <sein_a_shift-per> 
 
 %%%%% Regelmäßig Haben Verben mit "t" %%%%%
-$haben_regular_t$ = (\
-  ({}:{ge} $Letter$* <haben_regular_t>) || $t_ending$)
+$haben_regular_t-per$ = (\
+  ({}:{ge} $Letter$* <haben_regular_t-per>) || $t_ending$)
 
 %%%%% Unregelmäßig Haben Verben mit "t" %%%%%
-$haben_irregular_t$ = (\
-  $Letter$* <haben_irregular_t> || $t_ending$)
+$haben_irregular_t-per$ = (\
+  $Letter$* <haben_irregular_t-per> || $t_ending$)
 
 %%%%% Unregelmäßig Haben Verben unchanged %%%%%
-$haben_irregular_same$ = $Letter$* <haben_irregular_same>
+$haben_irregular_same-per$ = $Letter$* <haben_irregular_same-per>
 
 %%%%% U-shift Unregelmäßig Haben Verben %%%%%
-$haben_u_shift$ = (\
-  {}:{ge} $Letter$ i:u [a-z]* ({en}:{t} | {n}:{et} | en) <haben_u_shift>) 
+$haben_u_shift-per$ = (\
+  {}:{ge} $Letter$ i:u [a-z]* ({en}:{t} | {n}:{et} | en) <haben_u_shift-per>) 
 
 %%%%% Regelmäßig Haben Verben mit "en" %%%%%
-$haben_regular_en$ = (\
+$haben_regular_en-per$ = (\
   (aus | {}:{}| an) \
-  {}:{ge} [a-z]*) <haben_regular_en>
+  {}:{ge} [a-z]*) <haben_regular_en-per>
 
 %%%%% U-shift Unregelmäßig Haben Verben %%%%%
-$haben_u_shift$ = (\
-  {}:{ge} $Letter$ i:u $Letter$* <haben_u_shift> || \
+$haben_u_shift-per$ = (\
+  {}:{ge} $Letter$ i:u $Letter$* <haben_u_shift-per> || \
   $t_ending$)  
 
 %%%%% dictionary form for futur %%%%%%
@@ -50,6 +50,6 @@ $praeteritum_stems$ = ({kommen}:{kam} | {sein}:{war} | {laufen}:{lief} | {vergeh
 
 
 
-$sein_inflection$ = ($sein_a_shift$ | $sein_regular_en$)  
-$haben_inflection$ = ($haben_regular_t$ | $haben_irregular_t$ | $haben_irregular_same$ | $haben_u_shift$ | $haben_regular_en$ | $haben_u_shift$) 
+$sein_inflection$ = ($sein_a_shift-per$ | $sein_regular_en$)  
+$haben_inflection$ = ($haben_regular_t-per$ | $haben_irregular_t-per$ | $haben_irregular_same-per$ | $haben_u_shift-per$ | $haben_regular_en-per$ | $haben_u_shift-per$) 
 $dict_inflection$ =  $dict_form$
