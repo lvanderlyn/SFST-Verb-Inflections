@@ -32,6 +32,11 @@ $haben_regular_en$ = (\
   (aus | {}:{}| an) \
   {}:{ge} [a-z]*) <haben_regular_en>
 
+%%%%% U-shift Unregelmäßig Haben Verben %%%%%
+$haben_u_shift$ = (\
+  {}:{ge} $Letter$ i:u $Letter$* <haben_u_shift> || \
+  $t_ending$)  
+
 %%%%% dictionary form for futur %%%%%%
 $dict_form$ = $Letter$* $infl$*
 
@@ -46,5 +51,5 @@ $praeteritum_stems$ = ({kommen}:{kam} | {sein}:{war} | {laufen}:{lief} | {vergeh
 
 
 $sein_inflection$ = ($sein_a_shift$ | $sein_regular_en$)  
-$haben_inflection$ = ($haben_regular_t$ | $haben_irregular_t$ | $haben_irregular_same$ | $haben_u_shift$ | $haben_regular_en$) 
+$haben_inflection$ = ($haben_regular_t$ | $haben_irregular_t$ | $haben_irregular_same$ | $haben_u_shift$ | $haben_regular_en$ | $haben_u_shift$) 
 $dict_inflection$ =  $dict_form$
