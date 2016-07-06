@@ -97,9 +97,9 @@ $futur$ = {<V><Akt><fut><Ind>}:{} (\
   {<1><pl>}:{werden \ } |\
   {<2><pl>}:{werdet \ } |\
   {<3><pl>}:{werden \ })\ 
-  ($d_morph$))
+  ($d_morph$) en)
 
-$konjunktiv_II_present$= $konjunktiv_II$ {<V><Pres><KonII>}: {}(\
+$konjunktiv_II_present$ = ($konjunktiv_II$ | $k_morph$) {<V><Pres><KonII>}: {}(\
  ({<1><sg>}:{e} |\
   {<2><sg>}:{est} |\
   {<3><sg>}:{e} |\
@@ -107,7 +107,15 @@ $konjunktiv_II_present$= $konjunktiv_II$ {<V><Pres><KonII>}: {}(\
   {<2><pl>}:{et} |\
   {<3><pl>}:{en}))
 
-$praeteritum$ = $praeteritum_stems$ {<V><Praet>}:{} (\
+$praesens$ = $d_morph$ {<V><Akt><pres><Ind>}:{}(\
+ ({<1><sg>}:{e} |\
+  {<2><sg>}:{tst} |\
+  {<3><sg>}:{t} |\
+  {<1><pl>}:{en} |\
+  {<2><pl>}:{t} |\
+  {<3><pl>}:{en}))
+
+$praeteritum$ = ($praeteritum_stems$ | $k_morph$ {}:{e}) {<V><Praet>}:{} (\
  ({<1><sg>}:{} |\
   {<2><sg>}:{st} |\
   {<3><sg>}:{} |\
@@ -115,4 +123,4 @@ $praeteritum$ = $praeteritum_stems$ {<V><Praet>}:{} (\
   e? {<2><pl>}:{t} |\
   e? {<3><pl>}:{n}))
 
-$seinVerben$ | $habenVerben$ | $seinVerbenKonjunktiv$ | $habenVerbenKonjunktiv$ | $futurIIhaben$ | $futurIIsein$ | $passivF$ | $futur$ | $konjunktiv_II_present$ | $praeteritum$ | $passivPres$ | $passivPer$ | $passivPrae$
+$seinVerben$ | $habenVerben$ | $seinVerbenKonjunktiv$ | $habenVerbenKonjunktiv$ | $futurIIhaben$ | $futurIIsein$ | $passivF$ | $futur$ | $konjunktiv_II_present$ | $praeteritum$ | $passivPres$ | $passivPer$ | $passivPrae$ | $praesens$
