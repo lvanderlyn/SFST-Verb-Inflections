@@ -1,3 +1,0 @@
-ansehen
-aussehen
-tragen
