@@ -97,7 +97,7 @@ $futur$ = {<V><Akt><fut><Ind>}:{} (\
   {<1><pl>}:{werden \ } |\
   {<2><pl>}:{werdet \ } |\
   {<3><pl>}:{werden \ })\ 
-  ($d_morph$) en)
+  ($d_morph$) {}:{en})
 
 $konjunktiv_II_present$ = ($konjunktiv_II$ | $k_morph$) {<V><Pres><KonII>}: {}(\
  ({<1><sg>}:{e} |\
